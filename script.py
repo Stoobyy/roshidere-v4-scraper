@@ -22,8 +22,6 @@ def script():
                     f.write(f'![Image {i}](Chapter {i}/{j})\n')
                 f.write(text)
             f.write('\nChapter complete.\n')
-    subprocess.Popen(['winget', 'install', 'pandoc', '--accept-source-agreements', '--accept-package-agreements'])
-    time.sleep(60)
     subprocess.Popen(['pandoc', 'Roshidere.txt', '-o', 'Roshidere.epub'])
     print('Scripting complete. Output is Roshidere.epub')
-    
+
