@@ -24,4 +24,3 @@ def script():
             f.write('\nChapter complete.\n')
     subprocess.Popen(['pandoc', 'Roshidere.txt', '-o', 'Roshidere.epub'])
     print('Scripting complete. Output is Roshidere.epub')
-
