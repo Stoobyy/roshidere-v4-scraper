@@ -23,8 +23,9 @@ for num in range(1,8):
                 url = '{}{}'.format(site, url)
             response = requests.get(url)
             f.write(response.content)
-    print(f"Chapter {num} download complete, image to text after all chapters finish downloading.")
+    print(f"Chapter {num} download complete, scripting starts after all chapters are complete!.")
 
+print('Scripting started! It will take a while, please be patient as script has to download and install multiple requirements before converting.')
 script()
 
 
