@@ -6,7 +6,7 @@ import re
 import time
 from script import script
 
-for num in range(1,8):
+for num in range(1,10):
     os.mkdir(f'Chapter {num}') if not os.path.exists(f'Chapter {num}') else None
     site = f'https://glucosetl.wordpress.com/roshidere-v4-5-c{num}/'
     r = requests.get(f'https://glucosetl.wordpress.com/roshidere-v4-5-c{num}/')
